@@ -1,10 +1,14 @@
 
 /* Custom, iPhone Retina */ 
-    @media only screen and (min-width : 320px) {
+    @media only screen and (min-width : 320px) and (-webkit-min-device-pixel-ratio: 2)" {
 		.page-header,.pageHeader{
 		position: relative;
 	    
     }
+	.navbar{
+			width:100;
+	 
+	 }
 
     /* Extra Small Devices, Phones */ 
     @media only screen and (min-width : 480px) {
@@ -20,6 +24,10 @@
 
     /* Small Devices, Tablets */
     @media only screen and (min-width : 768px) {
+		.page-header,.pageHeader{
+		position: relative;
+	    
+   		 }
 		.navbar{
 			width:auto;
 
@@ -28,6 +36,10 @@
 
     /* Medium Devices, Desktops */
     @media only screen and (min-width : 992px) {
+		.page-header,.pageHeader{
+		position: relative;
+	    
+   		 }
 		.navbar{
 			width:auto;
 
@@ -35,6 +47,10 @@
 
     /* Large Devices, Wide Screens */
     @media only screen and (min-width : 1200px) {
+		.page-header,.pageHeader{
+		position: relative;
+	    
+   		 }
 		.navbar{
 			width:auto;
 
@@ -44,34 +60,70 @@
 
     /* Large Devices, Wide Screens */
     @media only screen and (max-width : 1200px) {
+		.page-header,.pageHeader{
+		position: relative;
+	    
+   		 }
+		 .navbar{
+			width:auto;
+
+   		 }
 
     }
 
     /* Medium Devices, Desktops */
     @media only screen and (max-width : 992px) {
+		.page-header,.pageHeader{
+		position: relative;
+	    
+   		 }
+		 .navbar{
+			width:auto;
+
+   		 }
 
     }
 
     /* Small Devices, Tablets */
     @media only screen and (max-width : 768px) {
+		.page-header,.pageHeader{
+		position: relative;
+	    
+   		 }
 
     }
 
     /* Extra Small Devices, Phones */ 
     @media only screen and (max-width : 480px) {
+		.page-header,.pageHeader{
+		position: relative;
+	    
+   		 }
 
     }
 
     /* Custom, iPhone Retina */ 
     @media only screen and (max-width : 320px) {
+		.page-header,.pageHeader{
+		position: relative;
+	    
+   		 }
         
     }
 	
 	@media only screen and (max-width : 1200px) {
+		.page-header,.pageHeader{
+		position: relative;
+	    
+   		 }
 
 }
 
 @media only screen and (max-width : 979px) {
+	.page-header,.pageHeader{
+		position: relative;
+	    
+   		 }
 
 }
 
