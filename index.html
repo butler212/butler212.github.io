@@ -2,7 +2,8 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>Pen & Pixel 2016</title>
 	<script src="js/jquery-1.12.1.min.js" type="text/javascript"></script>
 	<!--<script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>-->
@@ -10,6 +11,28 @@
 	
 	<script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/js.js" type="text/javascript"></script>
+    <script>
+		$(document).ready(function(){
+    	$("button").click(function(){
+		$("#lsadLogo").fadeIn("slow");
+        $("#minellaLogo").slideDown("fast");
+		$("#tippCoco").fadeIn(2000);
+       
+    });
+});	
+	</script>
+    	<script>
+    
+    <!-- Google Analytics -->
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-75916149-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
     
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css" type="text/css">
@@ -17,16 +40,47 @@
 </head>
 
 <body>
-	<div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#aboutUs">About Us</a></li>
-        <li><a href="#findUs">Find Us</a></li>
-        <li><a href=".galleryContainer">Gallery</a></li>
-        <li><a href="#sponsors">Our Sponsors</a></li>
-        <li><a href="#contact">Contact Us</a></li>
-         
-	   </ul>
+
+<div id="landingPage" class="container">
+
+	<div class="container-fluid text-center">
+
+		<img src="images/p_and_p_header_new.png" alt="pen&pixelLogo" width="100%" height="500" id="logo"/> <br> 
+			<button type="button" id="enter" class="btn btn-primary btn-md">Welcome to Pen & Pixel 2016</button>
+            
+		</div>
+  </div>      
+        <script>
+		$( "#enter" ).click(function() {
+  			$( "#logo" ).fadeTo( "slow" , 0.3, function() {
+    		});
+		});
+		</script>
+	<div class="navbar navbar-inverse navbar-static-top">
+   		<div class="container">
+    		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navHeaderCollapse">
+        		<span class="sr-only">Toggle Navigation</span>
+				<span class ="icon-bar"></span>
+          		<span class ="icon-bar"></span>
+          		<span class ="icon-bar"></span>
+        	</button>
+    
+    <div class="collapse navbar-collapse" id="navHeaderCollapse">
+   
+    
+	<!--<div class="collapse navbar-collapse" id="myNavbar">-->
+      	<ul class="nav navbar-nav navbar-right">
+            <li><a href="#aboutUs">About Us</a></li>
+            <li><a href="#galleryContainer">Gallery</a></li>
+            <li><a href="#sponsors">Our Sponsors</a></li>
+            <li><a href="#findUs">Find Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+             
+	   	</ul>
 	</div>
+  </div>
+</div>
+  <a id="top"></a> 
 
 <div id="aboutUs" class="container">
 
@@ -38,7 +92,7 @@
     </p>
     
     
-    <p>Pen and Pixel is an annual creative multimedia exhibition held by the students of Limerick Institute of Technology in Clonmel. This year the event will be held on Thursday the 22nd of May 2016 at 6.00pm in the Clonmel campus of Limerick School of Art and Design. The annual event has slowly transformed into a spectacular end of year exhibition. As part of the exhibition, we are showcasing the work of students from the past year. This exhibition will feature both digital and analogue pieces from the students of LSAD Clonmel.  </p>
+    <p>Pen and Pixel is an annual creative multimedia exhibition held by the students of Limerick Institute of Technology in Clonmel. This year the event will be held on Thursday the 26th of May 2016 at 6.00pm in the Clonmel campus of Limerick School of Art and Design. The annual event has slowly transformed into a spectacular end of year exhibition. As part of the exhibition, we are showcasing the work of students from the past year. This exhibition will feature both digital and analogue pieces from the students of LSAD Clonmel.  </p>
 
   <div class="row">
     <div class="col-sm-4">
@@ -70,18 +124,9 @@ The programme provides advanced modules in both the creative and technical proce
 </div>
     
 
-<div id="findUs" class="container">
 
-	<h1 class="page-header" align="center">Find Us</h1>
 
-    	<p> Pen & Pixel can also be found and followed on Twitter by using @pen_and_pixel or by using the following link https://twitter.com/pen_and_pixel
-    </p>
-    
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.376600121856!2d-7.707440049515214!3d52.363590979685675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x484331fee0a6c64f%3A0xe258de902f5f1b83!2sLIT+Clonmel!5e0!3m2!1sen!2sie!4v1459339264575" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-</div>
- 
-
-	<h1 class="pageHeader" align="center">Gallery</h1>
+	<h1 class="pageHeader" id="galleryContainer" align="center">Gallery</h1> <br>
  
 	<div class="galleryFilter">
 
@@ -104,9 +149,8 @@ The programme provides advanced modules in both the creative and technical proce
 	</div>
 	
 	<div class="animation">
-    <div class="col-lg-2 col-md-5 col-xs-6 thumb">
-    	<a rel="prettyPhoto[submissions]" class="thumbnail" href="#" href="submissions/123.jpg">
-     		<img class="img-responsive" src="submissions/123.jpg" width="60" height="60" alt="animation"> </a>
+    	<a rel="prettyPhoto[submissions]" href="submissions/123.jpg">
+     		<img src="submissions/123.jpg" alt="animation"> </a>
  
  		<a rel="prettyPhoto[submissions]" href="submissions/124.jpg">
             <img src="submissions/124.jpg" alt="animation"> </a>
@@ -348,74 +392,74 @@ The programme provides advanced modules in both the creative and technical proce
 
 	</div>	
 	
-	
-	
 </div>
- 
 
-   <div id="sponsors" class="container" align="center"> 
-		<h1 class="page-header" align="center"> Sponsors </h1>
-        	<div class="row">
-    			<div class="col-sm-4">
-                	<a href="http://www.hotelminella.com/">
-                	<img src="images/minella_logo.jpg"></a>
-            </div>    
-                </div>
-        
-			<div class="row">
-    			<div class="col-sm-4">
-                <a href="http://www.clonmelcu.com/">
-                <img src="images/credit_u.jpg" alt="pic of Credit Union Sponsor"> </a>
-        		</div>
-            </div> 
-            
-            
-            <div class="row">
-    			<div class="col-sm-4">
-                <a href="http://www.tipperarycoco.ie">
-                	<img src="images/tipp_co_co.png"></a>
-                </div>
-            </div>
-            </div>
-            </div>
-                    
+<div id="sponsors" class="container" align="center">
+	<h1 class="page-header" align="center"> Sponsors </h1>
+<!--<div align="center">-->
+		<button id="fadeButton" type="button" class="btn btn-primary btn-md"> Click to view Our Sponsors</button> <br> <br>
+	
+					<div id="lsadLogo" style="width:100px;height:130px;display:none;">
+    					<a href="http://www.lit.ie/lsad/" target="_blank">
+                			<img src="images/LSAD_logo.jpg" alt="pic of LSAD LIT Logo" width="324" height="144"> 
+                        </a>
+        			</div>
            
+          <br><br>   
+          
+		<div id="tippCoco" style="width:100px;height:130px;display:none;">
+			<a href="http://www.tipperarycoco.ie" target="_blank">
+                <img src="images/tipp_co_co.png" width="324" height="144"></a>
+                </div> 
+        
+ <br> <br>   
 
-</div> <br>
+
+	<div id="minellaLogo" style="width:100px;height:130px; display:none">
+		<a href="http://www.hotelminella.com/" target="_blank">
+       		<img src="images/minella_logo.jpg" width="324" height="144"></a>
+    </div>  
             
+</div> <br> <br>
+                
+      
+ <div id="findUs" class="container" align="center">
+
+	<h1 class="page-header" align="center">Find Us</h1> <br>
+
+    	<p> Pen & Pixel can also be found and followed on Twitter by clicking the following link: 
+        	<a href="https://twitter.com/pen_and_pixel" target="_blank">Follow Us on Twitter</a>
+    	</p> <br>
+    
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.376600121856!2d-7.707440049515214!3d52.363590979685675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x484331fee0a6c64f%3A0xe258de902f5f1b83!2sLIT+Clonmel!5e0!3m2!1sen!2sie!4v1459339264575" width="800" height="600" frameborder="0" style="border:0" allowfullscreen>
+        </iframe>
+</div> <br> <br>
+  
      <div id="contact" class="container" align="center"> 
 		<h1 class="page-header" align="center">Contact Us</h1>
 
 
-<iframe src="https://docs.google.com/forms/d/1eMNu31x9OV6IMVBrad-jxxdDV4euYY8fpHy6bakvuy0/viewform?embedded=true" width="900" height="700" frameborder="20" marginheight="10" marginwidth="10">Loading...</iframe>
+<iframe src="https://docs.google.com/forms/d/1eMNu31x9OV6IMVBrad-jxxdDV4euYY8fpHy6bakvuy0/viewform?embedded=true" width="900" height="800" frameborder="20" marginheight="10" marginwidth="10">Loading...</iframe>
 
 </div>
 
 </div>
 
-</div>       
+</div> <br>      
        
- <!-- Google Analytics -->
-<footer class="text-center" class="container">
-  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+ 
+<footer class="text-center">
+  <a href="#top">Back to the Top </a>  
   
-   <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#aboutUs">About Us</a></li>
-        <li><a href="#findUs">Find Us</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#sponsors">Our Sponsors</a></li>
-        <li><a href="#contact">Contact Us</a></li>
-         
-		</ul>
-</div>
-  </a><br><br>
-  
+
 </footer>     
+
+
  <script type="text/javascript" charset="utf-8">
                $(document).ready(function(){
                  $("a[rel^='prettyPhoto']").prettyPhoto();
                });
              </script>
+             
 </body>
 </html>
