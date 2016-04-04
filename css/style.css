@@ -105,7 +105,7 @@ body {
 
 .galleryFilter a { 
     margin-right: 10px; 
-	color:#666;
+	color:white;
 	text-decoration:none;
 }
 
@@ -120,6 +120,7 @@ img {
 
 .btn, .btn-md{
 	background-color:#111010;
+	text-align:center;
 	color:white;
 }
 
