@@ -119,8 +119,8 @@ img {
 }
 
 .btn, .btn-md{
-	background: #0099cc;
-    color: #ffffff;
+	background-color:#111010;
+	color:white;
 }
 
 .isotope-item {
