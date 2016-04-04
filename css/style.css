@@ -87,12 +87,9 @@
       color: white !important;
   }
   .navbar-nav li.active a {
-      color: #fff !important;
+      color: white !important;
       background-color: #29292c !important;
   }
-
-
-
 
 
 body {
