@@ -118,7 +118,7 @@ img {
     margin:5px;
 }
 
-.btn btn-primary btn-md{
+.btn, .btn-md{
 	background: #0099cc;
     color: #ffffff;
 }
